@@ -13,8 +13,8 @@
 		"vscode": {
 			"extensions": [
 				"vscjava.vscode-gradle",
-				"vmware.vscode-boot-dev-pack",
-				"42Crunch.vscode-openapi"			]
+				"vmware.vscode-boot-dev-pack"
+			]
 		}
 	}
 

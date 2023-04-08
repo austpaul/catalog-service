@@ -1,7 +1,5 @@
 {
-    // "boot-java.live-information.automatic-connection.on": false,
-    "openapi.defaultPreviewRenderer": "redoc",
-    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.configuration.updateBuildConfiguration": "automatic",
     "java.compile.nullAnalysis.mode": "automatic",
     "editor.tabSize": 2
 }
