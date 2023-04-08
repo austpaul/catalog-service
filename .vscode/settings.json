@@ -1,7 +1,7 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic",
-    "java.settings.url": ".vscode/java.settings.prefs",
-    "boot-java.live-information.automatic-connection.on": false,
+    // "boot-java.live-information.automatic-connection.on": false,
     "openapi.defaultPreviewRenderer": "redoc",
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "editor.tabSize": 2
 }
