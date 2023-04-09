@@ -1,0 +1,17 @@
+//List catalog
+http :9001/books
+
+//Create book 1
+http POST :9001/books author="Lyra S" isbn="1234567890" price=9.9 title="Pole"
+
+//Create book 2
+http POST :9001/books author="Syra L" isbn="1234567891" price=14.99 title="South pole"
+
+//Update book 1
+http PUT :9001/books/1234567890 author="Lyra S" isbn="1234567890" price=9.9 title="North pole"
+
+//Get book 1
+http :9001/books/1234567890
+
+//Delete book 1
+http DELETE :9001/books/1234567890
