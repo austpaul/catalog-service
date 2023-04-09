@@ -16,6 +16,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	runtimeOnly 'org.springdoc:springdoc-openapi-ui:1.7.0'
+	runtimeOnly 'org.yaml:snakeyaml:2.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
