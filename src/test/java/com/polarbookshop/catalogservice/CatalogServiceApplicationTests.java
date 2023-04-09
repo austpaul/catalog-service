@@ -8,7 +8,6 @@ class CatalogServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
-		System.out.println(System.getProperty( "os.arch" ));
 	}
 
 }
