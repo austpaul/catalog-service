@@ -27,6 +27,9 @@ public class BookService {
   }
 
   public void removeBookFromCatalog(String isbn) {
+    if (!bookRepository.existsByIsbn(isbn)) {
+      throw new BookNotFoundException(isbn);
+    }
     bookRepository.deleteByIsbn(isbn);
   }
 
