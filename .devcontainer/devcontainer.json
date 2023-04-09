@@ -13,16 +13,17 @@
 		"vscode": {
 			"extensions": [
 				"vscjava.vscode-gradle",
-				"vmware.vscode-boot-dev-pack"
+				"vmware.vscode-boot-dev-pack",
+				"wk-j.vscode-httpie"
 			]
 		}
-	}
+	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "java -version",
+	"postCreateCommand": "sudo apt-get update && sudo apt-get -y install httpie && wget -qO - https://raw.githubusercontent.com/anchore/grype/main/install.sh | sudo bash -s -- -b /usr/local/bin"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
