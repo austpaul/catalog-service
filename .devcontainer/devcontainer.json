@@ -17,7 +17,11 @@
 				"wk-j.vscode-httpie",
 				"AnchoreInc.grype-vscode",
 				"oderwat.indent-rainbow"
-			]
+			],
+			"settings": {
+				"java.compile.nullAnalysis.mode": "automatic",
+				"editor.tabSize": 2
+			}
 		}
 	},
 
@@ -25,10 +29,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sudo apt-get update && sudo apt-get -y install httpie && wget -qO - https://raw.githubusercontent.com/anchore/grype/main/install.sh | sudo bash -s -- -b /usr/local/bin"
-
-	// Configure tool-specific properties.
-	// "customizations": {},
+	"postCreateCommand": "sh .devcontainer/tools.sh"
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
