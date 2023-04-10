@@ -12,16 +12,16 @@ public record Book(
         message = "The ISBN format must be valid."
     )
 
-    @NotBlank(message = "The book title must be defined.")
+    @NotBlank(message = "The book ISBN must be defined.")
     String isbn,
 
     @NotBlank(message = "The book title must be defined.")
     String title,
 
-    @NotNull(message = "THe book author must be defined.")
+    @NotBlank(message = "The book author must be defined.")
     String author,
 
     @NotNull(message = "The book price must be defined.")
-    @Positive(message = "THe book price must be greater than zero.")
+    @Positive(message = "The book price must be greater than zero.")
     Double price
 ) {}
