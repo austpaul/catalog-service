@@ -17,9 +17,11 @@
 				"vmware.vscode-boot-dev-pack",
 				"wk-j.vscode-httpie",
 				"AnchoreInc.grype-vscode",
-				"oderwat.indent-rainbow"
+				"oderwat.indent-rainbow",
+				"ms-vscode.live-server"
 			],
 			"settings": {
+				"java.configuration.updateBuildConfiguration": "interactive",
 				"java.compile.nullAnalysis.mode": "automatic",
 				"editor.tabSize": 2
 			}
