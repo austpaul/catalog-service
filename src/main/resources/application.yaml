@@ -8,3 +8,5 @@ server:
       min-spare: 5
 # springdoc:
 #     swagger-ui.path: /swagger-ui.html
+polar:
+  greeting: Welcome to the local book store!
