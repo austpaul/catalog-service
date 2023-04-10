@@ -15,9 +15,12 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
 	runtimeOnly 'org.springdoc:springdoc-openapi-ui:1.7.0'
 	runtimeOnly 'org.yaml:snakeyaml:2.0'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.boot:spring-boot-starter-webflux'
 }
 
 tasks.named('test') {
@@ -26,7 +29,7 @@ tasks.named('test') {
 
 tasks.named('bootBuildImage') {
     if (System.getProperty( "os.arch" ).toLowerCase().startsWith('aarch')) {
-		builder = "ghcr.io/thomasvitale/java-builder-arm64"
+			builder = "ghcr.io/thomasvitale/java-builder-arm64"
     }
-    // builder = "paketobuildpacks/builder:tiny"
+		// builder = "paketobuildpacks/builder:tiny"
 }
