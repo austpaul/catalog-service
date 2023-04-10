@@ -12,6 +12,7 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"redhat.vscode-yaml",
 				"vscjava.vscode-gradle",
 				"vmware.vscode-boot-dev-pack",
 				"wk-j.vscode-httpie",
