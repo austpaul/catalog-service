@@ -23,6 +23,7 @@
 			"settings": {
 				"java.configuration.updateBuildConfiguration": "interactive",
 				"java.compile.nullAnalysis.mode": "automatic",
+				"java.saveActions.organizeImports": true,
 				"editor.tabSize": 2,
         "editor.indentSize": "tabSize"
 			}
