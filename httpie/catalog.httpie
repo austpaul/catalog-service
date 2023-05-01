@@ -15,3 +15,6 @@ http :9001/books/1234567890
 
 //Delete book 1
 http DELETE :9001/books/1234567890
+
+//Refresh config
+ http POST :9001/actuator/refresh

@@ -19,12 +19,18 @@ spring:
       - http://localhost:8888
       request-connect-timeout: 5000
       request-read-timeout: 5000
-      fail-fast: true
+      fail-fast: false
       retry:
         max-attempts: 6
         initial-interval: 1000
         max-interval: 2000
         multiplier: 1.1
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - refresh 
 polar:
   greeting: Welcome to the default catalog from application.yaml
   testdata:
